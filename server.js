@@ -21,7 +21,7 @@ if (!DATABASE_URL) {
 // ==================== اتصال PostgreSQL ====================
 const pool = new Pool({
   connectionString: DATABASE_URL,
-  ssl: { rejectUnauthorized: false } // ضروري لـ Pxxl
+  ssl: false // ضروري لـ Pxxl
 });
 
 (async () => {
